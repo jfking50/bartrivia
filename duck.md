@@ -1,1 +1,1 @@
-![](C://Users//jking//OneDrive//Documents//R//sandbox//trivia//duck.png)
+![](duck.png)

@@ -2,20 +2,20 @@ library(shiny)
 library(tidyverse)
 library(ggpattern)
 
-mug = png::readPNG("C://Users//jking//OneDrive//Documents//R//sandbox//trivia//mugs3.png")
-foam_filename = "C://Users//jking//OneDrive//Documents//R//sandbox//trivia//foam.png"
-qs = readxl::read_xlsx("C://Users//jking//OneDrive//Documents//R//sandbox//trivia//questions.xlsx")
+mug = png::readPNG("mugs3.png")
+foam_filename = "foam.png"
+qs = readxl::read_xlsx("questions.xlsx")
 
 score = tibble(
     Team = c("A-C", "D-L", "M-Z"), 
     Score = c(10, 10, 10))
 
-
+# User interface
 ui <- navbarPage("TRAC Bar Trivia!",
                  theme = shinythemes::shinytheme("darkly"),
                  
                  tabPanel("Rules",
-                          includeMarkdown("C://Users//jking//OneDrive//Documents//R//sandbox//trivia//rules.md")),
+                          includeMarkdown("rules.md")),
                  
                  tabPanel("Game",
                           
@@ -47,9 +47,9 @@ ui <- navbarPage("TRAC Bar Trivia!",
                           )
                  ),
                  
-                 tabPanel("Team Prize", includeMarkdown("C://Users//jking//OneDrive//Documents//R//sandbox//trivia//duck.md")),
+                 tabPanel("Team Prize", includeMarkdown("duck.md")),
                  
-                 tabPanel("MVP", includeMarkdown("C://Users//jking//OneDrive//Documents//R//sandbox//trivia//cert.md"))
+                 tabPanel("MVP", includeMarkdown("cert.md"))
 )
 
 # Define server logic

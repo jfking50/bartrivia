@@ -1,2 +1,3 @@
-# bartrivia
- Shiny app for virtual holiday party
+# Bar Trivia
+
+Shiny app for a virtual holiday party.
