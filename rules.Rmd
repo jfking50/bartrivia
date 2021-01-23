@@ -1,0 +1,30 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+<p style="text-align: center;"><strong>Welcome to TRAC Trivia!</strong></p>
+
+Participants are split into three teams based on the first letter of their last name.
+
+There are 6 categories of trivia questions with 5 questions each. The categories are:
+
+1. Arts
+2. Entertainment
+3. Geography
+4. History
+5. Operations Research
+6. Science
+
+The game will start by one team of my choice selecting a trivia question category. The question will be displayed on the screen, and teams will have no more than 30 seconds to answer. Please do not answer out loud - instead, use the raise hand button, which will order participants based on who raised their hands first.
+
+When 30 seconds is up, I will ask the first person who raised their hand to give their answer. If the answer is correct, their team is awarded one point. If the answer is incorrect, I will ask the first person from the next team to provide their answer, and so on. If all three teams provide an incorrect answer, I will cycle back to the top through participants and teams. <i>There is no penalty for a wrong answer!</i>
+
+Whichever participant correctly answered the question chooses the category for the next question.
+
+Whichever team correctly answers 10 questions first is the winner, followed by the next team to correctly answer 10 questions. If no team has correctly answered 10 questions after 20 minutes of play, the team with the most correct answers is the winner.
+
+Note: trivia questions and answers were obtained from https://www.randomtriviagenerator.com (except the OR questions - you can blame me for those!).
